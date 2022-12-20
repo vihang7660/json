@@ -1,9 +1,16 @@
 import { useState } from 'react'
+import React from "react";
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
+  
   const [count, setCount] = useState(0)
+
+  React.useEffect(() => {
+    fetch("https://my-json-server.typicode.com/vihang7660/json").then(resp => resp.json()).then(info => console.log(info))
+
+  },[])
 
   return (
     <div className="App">
