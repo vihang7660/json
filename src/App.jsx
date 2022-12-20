@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   React.useEffect(() => {
-    fetch("https://my-json-server.typicode.com/vihang7660/json").then(resp => resp.json()).then(info => console.log(info))
+    fetch("https://api.npoint.io/81b674b9cd5b084349ba/").then(resp => resp.json()).then(info => console.log(info))
 
   },[])
 
